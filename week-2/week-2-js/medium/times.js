@@ -9,5 +9,11 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    console.log(new Date().getSeconds());
+    while(n>0) {
+        n--;
+    }
+    console.log(new Date().getSeconds());
 }
+
+calculateTime(10000000000);
